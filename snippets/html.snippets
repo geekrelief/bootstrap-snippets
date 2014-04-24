@@ -193,6 +193,9 @@ snippet checkboxinline
 snippet close
 	<button class="close">&times;</button>
 
+snippet col
+	<div class="col-md-{$1:6}">{$2:...}</div>
+
 snippet container
 	<div class="container">
 	  ${1:...}
@@ -226,6 +229,20 @@ snippet dropdownmenu
 	    <li><a tabindex="-1" href="#">${4:Separated link}</a></li>
 	  </ul>
 	</div>
+
+snippet fa
+	<i class="fa {$1:fa-cog}"></i>{$2:...}
+
+snippet fafw
+	<i class="fa {$1:fa-cog} fa-fw"></i>{$2:...}
+
+snippet fali
+	<li><i class="fa {$1:fa-cog} fa-fw"></i>{$2:...}</li>
+
+snippet faul
+	<ul class="fa-ul">
+		<li><i class="fa {$1:fa-cog} fa-fw"></i></li>
+	</ul>
 
 snippet form
 	<form>
@@ -691,14 +708,8 @@ snippet progresswarning
 
 snippet row
 	<div class="row">
-	  <div class="span${1:4}">${2:...}</div>
-	  <div class="span${3:8}">${4:...}</div>
-	</div>
-
-snippet rowfluid
-	<div class="row-fluid">
-	  <div class="span${1:4}">${2:...}</div>
-	  <div class="span${3:8}">${4:...}</div>
+	  <div class="col-md-${1:4}">${2:...}</div>
+	  <div class="col-md-${3:8}">${4:...}</div>
 	</div>
 
 snippet tabbable
